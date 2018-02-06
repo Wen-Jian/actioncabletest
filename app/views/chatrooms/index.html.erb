@@ -1,0 +1,13 @@
+<h1>Chat rooms</h1>
+
+<%= link_to 'Add new chatroom', new_chatroom_path, class: 'btn btn-primary'
+
+<% @chatrooms.each do |c|%>
+
+	<div>
+		
+		<%= link_to 'c.title', chatroom_path(c) %>
+
+	</div>
+
+<% end %>

@@ -1,0 +1,14 @@
+<h1>Add chat romm</h1>
+
+<%= form_for @chatroom do |f| %>
+
+	<div class="form-group">
+
+		<%= f.label :title %>
+		<%= f.text_field :title, autofocus: true, class: 'form-control' %>		
+
+	</div>
+
+	<%= f.submit "Build", class: 'btn btn-primary' %>
+
+	<% end %>
